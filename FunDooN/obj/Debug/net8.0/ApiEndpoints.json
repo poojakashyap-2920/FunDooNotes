@@ -1,0 +1,415 @@
+[
+  {
+    "ContainingType": "FunDooN.Controllers.CollaborationController",
+    "Method": "RemoveCollaborator",
+    "RelativePath": "api/Collaboration/{collabnoteid}/{useremail}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collabnoteid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "useremail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.CollaborationController",
+    "Method": "AddCollaborator",
+    "RelativePath": "api/Collaboration/CollaborateAdd",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cbDto",
+        "Type": "RepositoryLayer.Entity.Collaboration",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.CollaborationController",
+    "Method": "GetAllCollaborators",
+    "RelativePath": "api/Collaboration/getallcollaboration",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.LabelController",
+    "Method": "RemoveLabelName",
+    "RelativePath": "api/Label/{collabnoteid}/{useremail}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collabnoteid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "useremail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.LabelController",
+    "Method": "AddLabelName",
+    "RelativePath": "api/Label/AddLabel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cbDto",
+        "Type": "RepositoryLayer.Entity.LabelEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.LabelController",
+    "Method": "GetAllLabel",
+    "RelativePath": "api/Label/getalllabel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.LabelController",
+    "Method": "UpdateLabel",
+    "RelativePath": "api/Label/UpdateLabel/{collabnoteid}/{useremail}/{LabelName}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collabnoteid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "useremail",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "LabelName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.NoteController",
+    "Method": "DeleteNoteById",
+    "RelativePath": "api/Note/{noteid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "noteid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.NoteController",
+    "Method": "GetNote",
+    "RelativePath": "api/Note/GetAllNote",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.NoteController",
+    "Method": "GetNotesById",
+    "RelativePath": "api/Note/GetNoteByNoteId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NoteId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.NoteController",
+    "Method": "InsertNote",
+    "RelativePath": "api/Note/InsertNote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "noteDto",
+        "Type": "RepositoryLayer.Entity.NotesEntity",
+        "IsRequired": true
+      },
+      {
+        "Name": "emailid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.NoteController",
+    "Method": "UpdateNoteByNoteId",
+    "RelativePath": "api/Note/Update/{noteid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "noteid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDto",
+        "Type": "RepositoryLayer.Entity.NotesEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "ResetPasswordByEmail",
+    "RelativePath": "api/User/{userEmailUpdate}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personEmailUpdate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateDto",
+        "Type": "RepositoryLayer.Entity.UserEntity",
+        "IsRequired": true
+      },
+      {
+        "Name": "userEmailUpdate",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "DeleteEmployeeByEmail",
+    "RelativePath": "api/User/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "ChangePasswordRequest",
+    "RelativePath": "api/User/forgotpass/{Email}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "api/User/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "GetEmployeeByEmail",
+    "RelativePath": "api/User/GetAllByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "GetByIdUsingRedis",
+    "RelativePath": "api/User/getByIdUsingRedis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "GetLastName",
+    "RelativePath": "api/User/LastName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "Logout",
+    "RelativePath": "api/User/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "OrederByFirstName",
+    "RelativePath": "api/User/orderbyname",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/otp/{otp}/{password}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "otp",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "UpdateUserByEmail",
+    "RelativePath": "api/User/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateDto",
+        "Type": "RepositoryLayer.Entity.UserEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDooN.Controllers.UserController",
+    "Method": "InsertUser",
+    "RelativePath": "api/User/UserRegistration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empDto",
+        "Type": "RepositoryLayer.Entity.UserEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

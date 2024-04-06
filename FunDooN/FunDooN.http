@@ -1,0 +1,6 @@
+@FunDooN_HostAddress = http://localhost:5232
+
+GET {{FunDooN_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
