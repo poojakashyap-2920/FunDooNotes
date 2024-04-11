@@ -313,8 +313,8 @@ namespace RepositoryLayer.UserEntityService
                 // Enable SSL/TLS
                 smtpClient.EnableSsl = true;
 
-                string loginName = "m_raghu@outlook.com";
-                string loginPassword = "R@ghu2k01";
+                 string loginName = "pujakashyapkashyap1999@gmail.com";
+                 string loginPassword = "Pooja@123";
 
                 System.Net.NetworkCredential networkCredential = new System.Net.NetworkCredential(loginName, loginPassword);
                 smtpClient.UseDefaultCredentials = false;
