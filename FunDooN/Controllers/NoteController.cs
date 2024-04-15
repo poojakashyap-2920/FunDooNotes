@@ -11,11 +11,10 @@ namespace FunDooN.Controllers
     {
 
           private readonly ICobllabBl _noteBl;
-            private readonly IConfiguration _configuration;
-            public NoteController(ICobllabBl noteBl, IConfiguration configuration)
+            public NoteController(ICobllabBl noteBl)
             {
                 _noteBl = noteBl;
-                _configuration = configuration;
+              
             }
 
 
@@ -91,7 +90,7 @@ namespace FunDooN.Controllers
             }
 
             [HttpPut] // Specify the noteid parameter in the route template
-            public async Task<IActionResult> UpdateNoteByNoteId(int noteid, [FromBody] NotesEntity updateDto)
+            public async Task<IActionResult> UpdateNoteByNoteId(int noteid,  NotesEntity updateDto)
             {
                 try
                 {
