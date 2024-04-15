@@ -19,7 +19,7 @@ namespace FunDooN.Controllers
         }
 
         // Insert collaboration
-        [HttpPost("CollaborateAdd")]
+        [HttpPost]
         public async Task<IActionResult> AddCollaborator([FromBody] Collaboration cbDto)
         {
             try
@@ -51,7 +51,7 @@ namespace FunDooN.Controllers
             }
         }
 
-        [HttpGet("getallcollaboration")]
+        [HttpGet]
         public async Task<IActionResult> GetAllCollaborators()
         {
             try
@@ -66,7 +66,7 @@ namespace FunDooN.Controllers
         }
 
         // DELETE: /collaboration/{collabnoteid}/{useremail}
-        [HttpDelete("{collabnoteid}/{useremail}")]
+        [HttpDelete]
         public async Task<IActionResult> RemoveCollaborator(int collabnoteid, string useremail)
         {
             try
