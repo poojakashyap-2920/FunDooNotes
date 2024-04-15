@@ -20,7 +20,7 @@ namespace FunDooN.Controllers
 
 
             //insert
-            [HttpPost("InsertNote")]
+            [HttpPost]
             public async Task<IActionResult> InsertNote([FromBody] NotesEntity noteDto, string emailid)
             {
                 try
@@ -39,7 +39,7 @@ namespace FunDooN.Controllers
             }
 
             // get all
-            [HttpGet("GetAllNote")]
+            [HttpGet]
             public async Task<IActionResult> GetNote()
             {
                 try
@@ -71,7 +71,7 @@ namespace FunDooN.Controllers
                 }
             }
             //delete noteby id
-            [HttpDelete("{noteid}")] // Use the same parameter name as defined in the method signature
+            [HttpDelete] // Use the same parameter name as defined in the method signature
             public async Task<IActionResult> DeleteNoteById(int noteid)
             {
                 // Call the service to delete the note by its ID
@@ -90,7 +90,7 @@ namespace FunDooN.Controllers
                 }
             }
 
-            [HttpPut("Update/{noteid}")] // Specify the noteid parameter in the route template
+            [HttpPut] // Specify the noteid parameter in the route template
             public async Task<IActionResult> UpdateNoteByNoteId(int noteid, [FromBody] NotesEntity updateDto)
             {
                 try
