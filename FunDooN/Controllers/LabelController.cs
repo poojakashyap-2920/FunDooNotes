@@ -19,7 +19,7 @@ namespace FunDooN.Controllers
         }
 
         // Insert label
-        [HttpPost("AddLabel")]
+        [HttpPost]
         public async Task<IActionResult> AddLabelName([FromBody] LabelEntity cbDto)
         {
             try
@@ -58,7 +58,7 @@ namespace FunDooN.Controllers
 
 
         // DELETE: /label/{collabnoteid}/{useremail}
-        [HttpDelete("{collabnoteid}/{useremail}")]
+        [HttpDelete]
         public async Task<IActionResult> RemoveLabelName(int collabnoteid, string useremail)
         {
             try
@@ -81,7 +81,7 @@ namespace FunDooN.Controllers
         }
 
         // GET: /label/getalllabel
-        [HttpGet("getalllabel")]
+        [HttpGet]
         public async Task<IActionResult> GetAllLabel()
         {
             try
@@ -97,7 +97,7 @@ namespace FunDooN.Controllers
 
 
         // Update label
-        [HttpPut("UpdateLabel/{collabnoteid}/{useremail}/{LabelName}")]
+        [HttpPut]
         public async Task<IActionResult> UpdateLabel(int collabnoteid, string useremail, string LabelName)
         {
             try
