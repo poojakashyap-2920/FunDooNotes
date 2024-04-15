@@ -153,7 +153,7 @@ namespace FunDooN.Controllers
 
 
         //get all result
-        [HttpGet("GetAll")]
+        [HttpGet]
         public async Task<IActionResult> GetUser()
         {
             try
@@ -170,7 +170,7 @@ namespace FunDooN.Controllers
 
 
         //get result by id
-        [HttpGet("GetAllByEmail")]
+        [HttpGet("GetByEmail")]
         public async Task<IActionResult> GetEmployeeByEmail(string emailid)
         {
             try
@@ -186,7 +186,7 @@ namespace FunDooN.Controllers
         }
 
 
-        [HttpPut("Update")]
+        [HttpPut]
         public async Task<IActionResult> UpdateUserByEmail(string emailid, [FromBody] UserEntity updateDto)
         {
             try
@@ -207,7 +207,7 @@ namespace FunDooN.Controllers
         }
 
         //delete
-        [HttpDelete("Delete")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteEmployeeByEmail(string emailid)
         {
             try
